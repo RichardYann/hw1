@@ -1,0 +1,14 @@
+clear;
+clc;
+lena=imread('lena.bmp');
+lena7=lena/2;   lena6=lena/4;   lena5=lena/8;
+lena4=lena/16;  lena3=lena/32;  lena2=lena/64;
+lena1=lena/128;
+subplot(2,4,1);    imshow(lena,[0,256]);title('原图');
+subplot(2,4,2);    imshow(lena7,[0,127]);title('7灰度级');
+subplot(2,4,3);    imshow(lena6,[0,63]);title('6灰度级');
+subplot(2,4,4);    imshow(lena5,[0,31]);title('5灰度级');
+subplot(2,4,5);    imshow(lena4,[0,15]);title('4灰度级');
+subplot(2,4,6);    imshow(lena3,[0,7]);title('3灰度级');
+subplot(2,4,7);    imshow(lena2,[0,3]);title('2灰度级');
+subplot(2,4,8);    imshow(lena1,[0,1]);title('1灰度级');
